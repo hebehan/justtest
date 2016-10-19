@@ -3,8 +3,8 @@ pipeline:
     image: golang
     commands:
       - go build
-  notify:
-    image: email
+notify:
+  email:
     from: wanglei2@qiniu.com
     host: smtp.exmail.qq.com
     username: wanglei2
