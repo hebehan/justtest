@@ -5,3 +5,11 @@ pipeline:
       - go get
       - go build
       - go test
+notify:
+  email:
+    from: wanglei2@qiniu.com
+    host: smtp.exmail.qq.com
+    username: wanglei2
+    password: Ie3109iez
+    recipients:
+      - 541004974@qq.com
