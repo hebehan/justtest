@@ -3,7 +3,7 @@ pipeline:
     image: golang
     commands:
       - go build
-  email:
+  drone-email:
     from: wanglei2@qiniu.com
     host: smtp.exmail.qq.com
     username: wanglei2
