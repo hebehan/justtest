@@ -2,9 +2,7 @@ pipeline:
   build:
     image: golang
     commands:
-      - go get
       - go build
-      - go test
 notify:
   email:
     from: wanglei2@qiniu.com
