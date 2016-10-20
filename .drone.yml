@@ -12,3 +12,4 @@ pipeline:
       - 541004974@qq.com
     when:
       event: [push, pull_request, tag, deployment]
+      status:  [ failure, success ]
