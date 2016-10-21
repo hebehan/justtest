@@ -8,7 +8,7 @@ pipeline:
     username: kHAGmXunwyy0aNBHkuw78Mo7x1VkCgFQ23PufQj4
     password: 1r1LBWU7lysIitRBqHUWV2ReBeHJwLMuP56jHT-0
     email: 541004974@qq.com
-    repo: wanglei/justtest
+    repo: index.qbox.me/wanglei/justtest
     tag: latest
     file: Dockerfile
     insecure: false
