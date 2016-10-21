@@ -3,6 +3,15 @@ pipeline:
     image: golang
     commands:
       - go build
+  docker:
+    registry: index.qbox.me
+    username: kHAGmXunwyy0aNBHkuw78Mo7x1VkCgFQ23PufQj4
+    password: 1r1LBWU7lysIitRBqHUWV2ReBeHJwLMuP56jHT-0
+    email: 541004974@qq.com
+    repo: wanglei/justtest
+    tag: latest
+    file: Dockerfile
+    insecure: false
   kici/kciemail:
     from: wanglei2@qiniu.com
     host: smtp.exmail.qq.com
@@ -13,12 +22,3 @@ pipeline:
     when:
       event: [push, pull_request, tag, deployment]
       status:  [ failure, success ]
-  docker:
-    registry: https://index.qbox.me
-    username: kHAGmXunwyy0aNBHkuw78Mo7x1VkCgFQ23PufQj4
-    password: 1r1LBWU7lysIitRBqHUWV2ReBeHJwLMuP56jHT-0
-    email: 541004974@qq.com
-    repo: wanglei/justtest
-    tag: latest
-    file: Dockerfile
-    insecure: false
