@@ -5,8 +5,7 @@ pipeline:
       - go build
   kici/kcidocker:
     appenv: test
-    email: 541004974@qq.com
-    repo: index.qbox.me/wanglei/justtest
+    repo: wanglei/justtest
     tag: latest
     file: Dockerfile
     insecure: false
