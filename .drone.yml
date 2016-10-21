@@ -9,6 +9,8 @@ pipeline:
     tag: latest
     file: Dockerfile
     insecure: false
+    when:
+      event: [push, pull_request, tag, deployment]
   kici/kciemail:
     from: wanglei2@qiniu.com
     host: smtp.exmail.qq.com
