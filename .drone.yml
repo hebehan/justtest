@@ -4,6 +4,7 @@ pipeline:
     commands:
       - go build
   kici/kcidocker:
+    appenv: test
     email: 541004974@qq.com
     repo: index.qbox.me/wanglei/justtest
     tag: latest
