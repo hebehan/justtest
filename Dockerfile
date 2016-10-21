@@ -1,3 +1,3 @@
 FROM alpine:3.2
-ADD test /bin/
-ENTRYPOINT ["/bin/test"]
+ADD justtest /bin/
+ENTRYPOINT ["/bin/justtest"]
