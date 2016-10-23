@@ -1,5 +1,4 @@
 label:a
-
 pipeline:
   build:
     image: golang
