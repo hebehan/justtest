@@ -12,6 +12,7 @@ pipeline:
     when:
       event: [push, pull_request, tag, deployment]
   kici/kciemail:
+    appenv: test
     recipients:
       - 541004974@qq.com
     when:
