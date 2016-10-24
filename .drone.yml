@@ -12,10 +12,6 @@ pipeline:
     when:
       event: [push, pull_request, tag, deployment]
   kici/kciemail:
-    from: wanglei2@qiniu.com
-    host: smtp.exmail.qq.com
-    username: wanglei2@qiniu.com
-    password: Ie3109iez
     recipients:
       - 541004974@qq.com
     when:
