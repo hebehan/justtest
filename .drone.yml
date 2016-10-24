@@ -23,6 +23,3 @@ pipeline:
       status:  [ failure, success ]
 
 
-
-
-
