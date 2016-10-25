@@ -11,7 +11,7 @@ pipeline:
     insecure: false
     when:
       event: [push, pull_request, tag, deployment]
-  kici/kciemail:
+  index.qbox.me/wanglei/kciemail:
     appenv: test
     recipients:
       - 541004974@qq.com
