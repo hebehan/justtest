@@ -3,7 +3,7 @@ pipeline:
     image: index.qbox.me/wanglei/golang
     commands:
       - go build
-  kici/kcidocker:
+  index.qbox.me/library/plugin_docker:
     appenv: test
     repo: wanglei/justtest
     tag: latest
@@ -11,7 +11,7 @@ pipeline:
     insecure: false
     when:
       event: [push, pull_request, tag, deployment]
-  index.qbox.me/wanglei/kciemail:
+  index.qbox.me/library/plugin_email:
     appenv: test
     recipients:
       - 541004974@qq.com
