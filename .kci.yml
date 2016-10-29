@@ -3,11 +3,6 @@ pipeline:
     image: index.qbox.me/wanglei/golang
     commands:
       - go build
-  index.qbox.me/library/plugin_kodo:
-    bucket: "tumi"
-    source: ./justtest
-    target: data/
-    delete: true
   index.qbox.me/library/plugin_docker:
     appenv: test
     repo: wanglei/justtest
