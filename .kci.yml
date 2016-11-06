@@ -9,7 +9,7 @@ pipeline:
     tag: latest
     file: Dockerfile
     insecure: false
-    volumes:
+    volumes: 
       - /justestforcache:/var/lib/docker
     when:
       event: [push, pull_request, tag, deployment]
