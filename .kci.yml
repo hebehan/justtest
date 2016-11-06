@@ -9,8 +9,7 @@ pipeline:
     tag: latest
     file: Dockerfile
     insecure: false
-    volumes: 
-      - /justestforcache:/var/lib/docker
+    storage_path: /kci_cache/u2takey
     when:
       event: [push, pull_request, tag, deployment]
   index.qbox.me/kci/plugin_email:
