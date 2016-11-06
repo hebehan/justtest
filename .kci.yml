@@ -9,6 +9,10 @@ pipeline:
     tag: latest
     file: Dockerfile
     insecure: false
+    load: docker/image.tar
+    save:
+      destination: docker/image.tar
+      tag: latest
     when:
       event: [push, pull_request, tag, deployment]
   index.qbox.me/kci/plugin_email:
@@ -18,5 +22,10 @@ pipeline:
     when:
       event: [push, pull_request, tag, deployment]
       status:  [ failure, success ]
-
+  index.qbox.me/kci/plugin_kodo:
+    bucket: tumi
+    source: /docker
+    target: /docker
+    access_key: Zxk6nc0R0YImqHtvK51PuwA0nKuOdsaaCCCa-HFF
+    secret_key: 8wfzQs-lqnOb8C_ZJ6Q8Kju2TAI1S57t47gXP8Q2
 
