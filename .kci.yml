@@ -26,6 +26,6 @@ pipeline:
     bucket: tumi
     source: /docker
     target: /docker
-    access_key: Zxk6nc0R0YImqHtvK51PuwA0nKuOdsaaCCCa-HFF
-    secret_key: 8wfzQs-lqnOb8C_ZJ6Q8Kju2TAI1S57t47gXP8Q2
+    access_key: 
+    secret_key:
 
