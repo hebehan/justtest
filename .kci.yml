@@ -3,16 +3,17 @@ pipeline:
     image: index.qbox.me/wanglei/golang
     commands:
       - go build
-  index.qbox.me/kci/plugin_docker:
+  index.qiniu.com/kci/plugin_docker:
     appenv: test
     repo: wanglei/justtest
     tag: latest
     file: Dockerfile
     insecure: false
     storage_path: /kci_cache/u2takey
+    mirror: http://e05f9689.m.daocloud.io
     when:
       event: [push, pull_request, tag, deployment]
-  index.qbox.me/kci/plugin_email:
+  index.qiniu.com/kci/plugin_email:
     appenv: test
     recipients:
       - 541004974@qq.com
