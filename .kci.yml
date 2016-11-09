@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: index.qbox.me/wanglei/golang
+    image: index.qiniu.com/wanglei2/golang
     commands:
       - go build
   index.qiniu.com/kci/plugin_docker:
