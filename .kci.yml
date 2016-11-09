@@ -4,7 +4,6 @@ pipeline:
     commands:
       - go build
   index.qiniu.com/kci/plugin_docker:
-    appenv: test
     repo: wanglei/justtest
     tag: latest
     file: Dockerfile
