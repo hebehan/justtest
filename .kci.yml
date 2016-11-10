@@ -12,7 +12,6 @@ pipeline:
     when:
       event: [push, pull_request, tag, deployment]
   index.qiniu.com/kci/plugin_email:
-    appenv: test
     recipients:
       - 541004974@qq.com
     when:
