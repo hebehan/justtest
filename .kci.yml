@@ -8,7 +8,7 @@ pipeline:
     tag: latest
     file: Dockerfile
     insecure: false
-    storage_path: /kci_cache/u2takey
+    storage_path: /cache/u2takey
     when:
       event: [push, pull_request, tag, deployment]
   index.qiniu.com/kci/plugin_email:
