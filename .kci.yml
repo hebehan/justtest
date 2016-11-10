@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: index.qiniu.com/wanglei2/golang
+    image: index.qiniu.com/kci/golang:1.6
     commands:
       - go build
   index.qiniu.com/kci/plugin_docker:
