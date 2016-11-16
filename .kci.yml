@@ -4,7 +4,7 @@ pipeline:
     commands:
       - go build
   index.qiniu.com/kci/plugin_docker:
-    repo: wanglei2/justtest
+    repo: wanglei/justtest
     tag: latest
     insecure: false
     storage_path: /cache/u2takey
