@@ -2,10 +2,12 @@ workspace:
   base: /go
   path: 
 pipeline:
-  index.qiniu.com/kci/plugin_git :
+  clone:
+    image:index.qiniu.com/kci/plugin_git :
     remote: https://github.com/u2takey/justtest.git
     path: /go/src/github.com/u2takey
-  index.qiniu.com/kci/plugin_git :
+  clone:
+    index.qiniu.com/kci/plugin_git :
     remote: https://github.com/kirk-enterprise/slate.git
     path: /go/src/github.com/kirk-enterprise/slate
   build:
