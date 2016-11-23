@@ -15,15 +15,15 @@ pipeline:
     commands:
       - go build
   index.qiniu.com/kci/plugin_docker:
-    repo: wanglei/justtest
+    repo: hanchaojie/justtest
     tag: latest
     insecure: false
-    storage_path: /cache/u2takey
+    storage_path: /cache/ihebe
     when:
       event: [push, pull_request, tag, deployment]
   index.qiniu.com/kci/plugin_email:
     recipients:
-      - 541004974@qq.com
+      - 1252680267@qq.com
     when:
       event: [push, pull_request, tag, deployment]
       status:  [ failure, success ]
